@@ -36,23 +36,16 @@
           </ul>
 
           <ul id="nav-mobile" class="side-nav fixed">
-            <li><a href="index.html">Home</a></li>
-            <li style="padding-bottom:15px"><a href="maths-for-ai-content-list.html"><span style="line-height:25px">Applied Mathematics Concepts</span></a></li>
-				    <!-- <li style="padding-bottom:15px"><a href="./linear-algebra-numpy/linear-algebra.html"><span style="line-height:25px">Linear Algebra using<br>Math Expressions and Numpy</span></a></li>
-            <li style="padding-bottom:15px"><a href="multivariable-calc-content-list.html"><span style="line-height:25px">Multivariable<br>Calculus and Automatic Differentiation</span></a></li> -->
-				    <li style="padding-bottom:15px"><a href="ml-content-list.html"><span style="line-height:25px">Machine Learning with scikit-learn (Supervised, Unsupervised, and Ensemble Learning)</span></a></li>
-				    <li style="padding-bottom:15px"><a href="dl-content-list.html"><span style="line-height:25px">Deep Learning with CNN, RNN &amp; LSTM</span></a></li>
-				    <li style="padding-bottom:15px"><a href="cv-content-list.html"><span style="line-height:25px">Computer Vision for Image recognition and OCR</span></a></li>
-						<li style="padding-bottom:15px"><a href="nlp-content-list.html"><span style="line-height:25px">Natural Language<br>Processing with Transformers</span></a></li>
-						<li style="padding-bottom:15px"><a href="ml-ops-content-list.html"><span style="line-height:25px">ML-Ops<br>Deploying Models to Production</span></a></li>
-            <!-- <li style="padding-bottom:15px"><a href="papers-content-list.html"><span style="line-height:25px">Interesting <br>Research Papers</span></a></li> -->
+            <li style="padding-bottom:15px"><a href=""><span style="line-height:25px">Data Cleansing and Manipulation with SQL</span></a></li>
+				    <li style="padding-bottom:15px"><a href=""><span style="line-height:25px">Conditional Function</span></a></li>
+				    <li style="padding-bottom:15px"><a href=""><span style="line-height:25px">Window Function</span></a></li>
+				    <li style="padding-bottom:15px"><a href=""><span style="line-height:25px">Correlated Subqueries</span></a></li>
+						<li style="padding-bottom:15px"><a href=""><span style="line-height:25px">Common Table Expressions(CTEs)</a></li>
+						<li style="padding-bottom:15px"><a href=""><span style="line-height:25px">Materialized Views</a></li>
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse">
             <i class="mdi-navigation-menu brand-text-color"></i>
           </a>
-
-          <a id="logo-container" href="#" class="navigationactionbarcontentscreentitle brand-text-color"><div style="float:left;"><img src="images/notes-icon-4.svg" width="60" height="60"></div><div style="float:left;margin-left:10px;">My Notes on AI</div></a>
-
         </div>
       </div>
     </nav>
@@ -60,41 +53,157 @@
     <div class="container" style="position:relative;top:56px;">
 			<div style="height:100%;float:left;padding:0px;margin:0px">
 			<div class="page">
-        <!-- <p class="topic-name" style="font-weight: 500">Table of Contents</p> -->
-        <h4 class="section-title-2">Data Wrangling using Pandas and Numpy</h4>
-        <p class="para-content">According to World Health Organization (WHO), cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year and affecting the quality of life of a large number of people worldwide. Prerequisites of the treatment of these types of disease involve proper diagnosis method to identify its occurrence and its type. Diagnosis of such diseases involve in-depth analysis of a large number of parameters. In this demo Pandas and Numpy is used for analysing one such dataset called A1_heart_disease_dataset</p>
-        <p class="para-content"><a href="https://github.com/mynotesonai/mynotesonai.github.io/blob/main/machine-learning/data_wrangling_and_complex_manipulation.ipynb" class="read-more-link">Link to Notebook</a></p>
+        <p class="topic-name" style="font-weight: 500">SQL For Data Analysis</p>
+        <h4 class="section-title-2">Data Cleansing and Manipulation with SQL</h4>
 
-        <h4 class="section-title-2">Unsupervised Learning with PyClustering</h4>
-        <p class="para-content">Applying Unsupervised Machine Models to a dataset containing attributes of individuals with relation to obesity levels, to predict “weight” of an individual using other features and classifying individuals into classes.
-          This demo uses clustering machine learning models that experiments with different distance metrics like Euclidean distance and Manhattan Distance used to determine cluster membership of a inference data point.</p>
-        <p class="para-content"><a href="https://github.com/mynotesonai/mynotesonai.github.io/blob/main/machine-learning/Machine_Learning_Clustering.ipynb" class="read-more-link">Link to Notebook</a></p>
-
-        <h4 class="section-title-2">Customer Behaviour Prediction with Supervised Learning</h4>
-        <p class="para-content">Customer details like Gender, Age Group and Education are few of the most significant
-        features for analysing cutomer behaviour to predict the byuing behaviour of customers. it is essential for businesses to
-        analyse their customer details to better understand consumer behaviour and their impact on various products.
-        This demo uses a CRM dataset and data on customer details having 20 attributes and 9134 records. This demo includes
-        three machine learning models for predicting customer response. As part of feature engineering it employs feature importance techniques
-        to extract important features and reduce dimensionality of the dataset.
-       </p>
-        <p class="para-content"><a href="https://github.com/mynotesonai/mynotesonai.github.io/blob/main/machine-learning/Customer_Response_Prediction.ipynb" class="read-more-link">Link to Notebook</a></p>
-
-        <h4 class="section-title-2">Ensemble Learning with LogitBoost</h4>
+        <h5 class="section-title-3">Coalesce Function</h5>
         <p class="para-content">
-          This demo replicates a Research Article to predict survival of patients with heart failure in Python/scikit-learn, originally written in R.
-          Authors of the paper used 10 Machine Learning Models which are replicated in Python using the same set of Features, Classifiers,
-          Train/Test splitting approach and a Performance metric - Matthews Correlation Coefficient.
+          Creates a separate column and populates with available values from the two parameters given.
+            - The datatypes of the columns should be the same
+            - Ordering of the parameters are important
         </p>
-        <p class="para-content">The demo builds various machine learning models like K-Nearest Neighbour classifier,
-          SVM Linear Classifier, SVM Radial Classifiers, and an Artificial Neural Network (Multilayer Perceptron) to classify the dataset.
-          It also builds a new type of boosting model called LogitBoost that uses loss function from Logistic Regression classification algorithm
-          into the Boosting framework. Adaptive Boosting algorithm uses 'Exponential loss' function whereas LogitBoost uses the 'Logistic loss' function.
-          The logistic loss deals with the misclassified examples in a more measured way than Adaboost's exponential loss function.
-          As a result the LogitBoost framework is less sensitive to outliers and noise.
+        <p class="para-content">
+          <pre class=" language-markup">
+            <code class=" language-markup">
+              Select store_name, web_address, Coalesce(web_address, store_name) <br>
+              from stores;
+            </code>
+          </pre>
         </p>
-        <p class="para-content"><a href="https://github.com/mynotesonai/mynotesonai.github.io/blob/main/machine-learning/Ensemble_Learning_with_LogitBoost.ipynb" class="read-more-link">Link to Notebook</a></p>
+        <p class="para-content">
+          <section id="section-4">
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>STORE_NAME</td>
+                  <td>WEB_ADDRESS</td>
+                  <td>Coalesce(web_address, store_name)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>San Francisco</td>
+                  <td>https://www.example.com</td>
+                  <td>https://www.example.com</td>
+                </tr>
+                <tr>
+                  <td>Seattle</td>
+                  <td>-</td>
+                  <td>Seattle</td>
+                </tr>
+                <tr>
+                  <td>New York City</td>
+                  <td>https://www.examplenew.com</td>
+                  <td>https://www.examplenew.com</td>
+                </tr>
+                <tr>
+                  <td>Chicago</td>
+                  <td>-</td>
+                  <td>Chicago</td>
+                </tr>
+              </tbody>
+            </table>
+            </section>
+        </b>
+        </p>
+        <h5 class="section-title-3">NVL Function</h5>
+        <p class="para-content">
+          The NVL() function replaces null values from an expression with a specified string
+        </p>
+        <p class="para-content">
+          <pre class=" language-markup">
+            <code class=" language-markup">
+              Select emp_name, nvl(comm, 0) from employee emp;
+            </code>
+          </pre>
+        </p>
+        <h5 class="section-title-6">Pivot Query</h5>
+        <p class="para-content">
+          <pre class=" language-markup">
+            <code class=" language-markup">
+              Select * from<br>
+              (select region_id, sub_region_id, population from eba_countries)<br>
+              pivot(sum(population) for region_id in <br>
+              (select distinct region_id from eba_countries));
+            </code>
+          </pre>
+        </p>
+        <h5 class="section-title-3">Pivot Query Result</h5>
+        <p class="para-content">
+          <section id="section-4">
+              <div class="row">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <td>SUB_REGION_ID</td>
+                          <td>10</td>
+                          <td>20</td>
+                          <td>30</td>
+                          <td>40</td>
+                          <td>50</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>50</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>543786</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>40</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>241780768</td>
+                        </tr>
+                        <tr>
+                          <td>110</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>73212100</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>70</td>
+                          <td>-</td>
+                          <td>152446923</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+            </section>
+        </b>
+      </p>
 
+      <h5 class="section-title-3">Observation</h5>
+      <p class="para-content">
+        From this query we can see that the region 30 has a population of 73212100 for a sub region ID 110 and round about 
+        1.9 billion for a region id 30.
+      <p>
+
+      <h4 class="section-title-2">Conditional Statements</h4>
+      <p class="para-content">
+      </p>
+
+      <h4 class="section-title-2">Analytical (Window) Functions</h4>
+      <p class="para-content">
+      </p>
+
+      <h4 class="section-title-2">Group By Extensions</h4>
+      <p class="para-content">
+      </p>
+
+      <h4 class="section-title-2">Hierarchical Queries</h4>
+      <p class="para-content"> 
+      </p>
       </div>
 			<div>&nbsp;</div>
 			</div>
